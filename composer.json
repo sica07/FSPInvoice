@@ -1,0 +1,28 @@
+{
+    "name": "sica07/fspinvoice",
+    "description": "A very simple forum ZF2 module based on riceri/MvitInvoice",
+    "type": "library",
+    "keywords": [
+        "zf2"
+    ],
+    "homepage": "https://github.com/sica07/FSPInvoice",
+    "authors": [
+        {
+            "name": "FSP",
+            "email": "",
+            "homepage": ""
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "zendframework/zendframework": "2.*",
+    },
+    "autoload": {
+        "psr-0": {
+            "FSPInvoice": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
