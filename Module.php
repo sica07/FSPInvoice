@@ -1,7 +1,7 @@
 <?php
-namespace MvitInvoice;
+namespace FspInvoice;
 
-use MvitInvoice\Model\InvoiceTable;
+use FspInvoice\Model\InvoiceTable;
 
 class Module {
     public function getAutoloaderConfig() {
@@ -24,7 +24,7 @@ class Module {
     public function getServiceConfig() {
         return array(
             'factories' => array(
-                'MvitInvoice\Model\InvoiceTable' =>  function($sm) {
+                'FspInvoice\Model\InvoiceTable' =>  function($sm) {
                     $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
                     $table     = new InvoiceTable($dbAdapter);
                     return $table;

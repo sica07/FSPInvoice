@@ -2,7 +2,7 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'MvitInvoice\Controller\Invoice' => 'MvitInvoice\Controller\InvoiceController',
+            'FspInvoice\Controller\Invoice' => 'FspInvoice\Controller\InvoiceController',
         ),
     ),
 
@@ -17,7 +17,7 @@ return array(
                         'id'     => '[0-9]+',
                     ),
                     'defaults' => array(
-                        'controller' => 'MvitInvoice\Controller\Invoice',
+                        'controller' => 'FspInvoice\Controller\Invoice',
                         'action'     => 'index',
                     ),
                 ),
@@ -28,7 +28,7 @@ return array(
                     'route' => '/invoice/[page/:page]',
                     'defaults' => array(
                         'page' => 1,
-                        'controller' => 'MvitInvoice\Controller\Invoice',
+                        'controller' => 'FspInvoice\Controller\Invoice',
                         'action'     => 'index',
                     ),
                 ),

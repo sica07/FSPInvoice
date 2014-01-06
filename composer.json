@@ -15,11 +15,11 @@
     ],
     "require": {
         "php": ">=5.3",
-        "zendframework/zendframework": "2.*",
+        "zendframework/zendframework": "2.*"
     },
     "autoload": {
         "psr-0": {
-            "FSPInvoice": "src/"
+            "FspInvoice": "src/"
         },
         "classmap": [
             "./Module.php"
